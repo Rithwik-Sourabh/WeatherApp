@@ -5,7 +5,7 @@ const cityField = document.querySelector(".time_location p");
 const dateField = document.querySelector(".time_location span");
 const emojiField = document.querySelector(".weather-icon img");
 const weatherField = document.querySelector(".weather_condition span");
-let target = "London";
+let target = "Hyderabad ";
 
 form.addEventListener("submit", search);
 
@@ -18,7 +18,7 @@ function search(e) {
 
 async function fetchData(target) {
   try {
-    let endPoint = `http://api.weatherapi.com/v1/current.json?key=35af7ff606db422880d141328231305&q=${target}&aqi=no`;
+    let endPoint = `http://api.weatherapi.com/v1/current.json?key=0dce5cb5f6bb4a3db4540032251009&q=${target}&aqi=no`;
     let response = await fetch(endPoint);
     let data = await response.json();
 

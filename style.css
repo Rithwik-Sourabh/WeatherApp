@@ -322,3 +322,181 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
 }
+/*responsive design and accessibility improvements*/
+/* Extra large screens (>1200px) */
+@media (min-width: 1200px) {
+  .weather-card {
+    max-width: 700px;
+    padding: 3.5rem;
+  }
+
+  .temp {
+    font-size: 6rem;
+  }
+
+  .location {
+    font-size: 3rem;
+  }
+
+  .weather-icon {
+    font-size: 5rem;
+  }
+}
+
+/* Large screens (992px - 1200px) */
+@media (max-width: 1200px) {
+  .weather-card {
+    max-width: 600px;
+    padding: 3rem;
+  }
+
+  .temp {
+    font-size: 5rem;
+  }
+
+  .location {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium screens (768px - 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .weather-card {
+    width: 90%;
+    padding: 2.5rem;
+  }
+
+  .weather {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .temp {
+    font-size: 4rem;
+  }
+
+  .location {
+    font-size: 2rem;
+  }
+
+  .weather-icon {
+    font-size: 4rem;
+  }
+
+  .weather-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Small screens (480px - 768px) */
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 2rem;
+  }
+
+  .temp {
+    font-size: 3.5rem;
+  }
+
+  .location {
+    font-size: 1.8rem;
+  }
+
+  .weather-icon {
+    font-size: 3.5rem;
+  }
+
+  .weather-details {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .search-container {
+    padding: 0.5rem;
+  }
+
+  .searchField {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .search-btn {
+    padding: 0.8rem;
+  }
+}
+
+/* Extra small screens (<480px) */
+@media (max-width: 480px) {
+  .weather-card {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .temp {
+    font-size: 3rem;
+  }
+
+  .location {
+    font-size: 1.6rem;
+  }
+
+  .weather-icon {
+    font-size: 3rem;
+  }
+
+  .weather-details {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .detail-item {
+    padding: 0.8rem;
+  }
+
+  .searchField {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .search-btn {
+    padding: 0.6rem;
+  }
+}
+
+/* Optional: Ultra small screens (<360px) */
+@media (max-width: 360px) {
+  .temp {
+    font-size: 2.5rem;
+  }
+
+  .location {
+    font-size: 1.4rem;
+  }
+
+  .weather-icon {
+    font-size: 2.5rem;
+  }
+
+  .weather-card {
+    padding: 1rem;
+  }
+
+  .detail-item {
+    padding: 0.6rem;
+  }
+
+  .searchField {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    padding: 0.5rem;
+  }
+}
